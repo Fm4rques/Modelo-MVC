@@ -6,11 +6,11 @@
 include_once '../controllers/UsuarioController.php';
 
 if ($_GET['controller'] === 'usuario') {
-    $usuarioController = new UsuarioController();
+    $userController = new UsuarioController();
     
     if ($_GET['action'] === 'visualizar') {
         $id = $_GET['id'];
-        $usuarioController->visualizar($id);
+        $userController->visualizar($id);
     }
 }
 
